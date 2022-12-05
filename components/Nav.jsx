@@ -6,11 +6,11 @@ export const Nav = () => {
       <Logo />
       <nav class="navigation">
         <ul>
-          <li><a href="#home">home</a></li>
-          <li><a href="#about">about</a></li>
-          <li><a href="#projects">projects</a></li>
-          <li><a href="#contact">contact</a></li>
-          <li><a href="#resume">resume</a></li>
+          <li><a href="#home" title="Intro Page">start</a></li>
+          <li><a href="#about" title="About and Skills Page">who</a></li>
+          <li><a href="#projects" title="Projects Page">things</a></li>
+          <li><a href="#contact" title="Contact Page">chat</a></li>
+          <li><a href="#resume" title="HTML Resume">hire</a></li>
         </ul>
       </nav>
     </header>

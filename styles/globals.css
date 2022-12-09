@@ -20,4 +20,39 @@
   .cursor {
     animation: blink 1s infinite ease-in-out;
   }
+  .console {
+    transition: all 1s ease-in-out;
+  }
+  .y {
+    @apply text-yellow-200;
+  }
+  .r {
+    @apply text-red-500;
+  }
+  .p {
+    @apply text-purple-500;
+  }
+  .b {
+    @apply text-cyan-400;
+  }
+  .o {
+    @apply text-orange-400
+  }
+  .type {
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation:
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
 }

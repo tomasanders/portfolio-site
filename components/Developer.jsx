@@ -1,41 +1,72 @@
+import { useState } from "react";
+import { About } from "./About";
+import { ConsoleAbout } from "./ConsoleAbout";
+import { ConsoleContact } from "./ConsoleContact";
+import { ConsoleProjects } from "./ConsoleProjects";
+import { Contact } from "./Contact";
+import { Projects } from "./Projects";
+
 export const Developer = () => {
-  const yellow = "text-yellow-200";
-  const red = "text-red-500";
-  const purple = "text-purple-500";
-  const blue = "text-cyan-400";
-  const orange = "text-orange-400";
-  const bl = "{";
-  const br = "}";
   const linkClass = "underline decoration-dotted underline-offset-4";
+
+  const [input, setInput] = useState(" ");
+  const [pageName, setPageName] = useState(" ");
+  const [console, setConsole] = useState();
+
+  function setInputAbout() {
+    setInput(<ConsoleAbout />);
+    setPageName("about");
+    setConsole(<About />);
+  };
+
+  function setInputProjects() {
+    setInput(<ConsoleProjects />);
+    setPageName("projects");
+    setConsole(<Projects />);
+  };
+
+  function setInputContact() {
+    setInput(<ConsoleContact />);
+    setPageName("contact");
+    setConsole(<Contact />);
+  };
 
   return (
     <div className="flex flex-col gap-2">
       <p className="text-base text-slate-100">
-        <span className={yellow}>class</span> <span className={red}>Developer</span> <span className={yellow}>{bl}</span>
+        <span className="y">class</span> <span className="r">Developer</span> <span className="y">{'{'}</span>
         <br />
-        &nbsp;&nbsp;<span className={yellow}>constructor</span> <span className={purple}>() {bl}</span>
+        &nbsp;&nbsp;<span className="y">constructor</span> <span className="p">() {'{'}</span>
         <br />
-        &nbsp;&nbsp;&nbsp;&nbsp;<span className={red}>this</span>.<span className={purple}>birthYear</span> = <span className={blue}>1985</span>;
+        &nbsp;&nbsp;&nbsp;&nbsp;<span className="r">this</span>.<span className="p">birthYear</span> = <span className="b">1985</span>;
         <br />
-        &nbsp;&nbsp;&nbsp;&nbsp;<span className={red}>this</span>.<span className={purple}>birthPlace</span> = <span className={orange}>'USA'</span>;
+        &nbsp;&nbsp;&nbsp;&nbsp;<span className="r">this</span>.<span className="p">birthPlace</span> = <span className="o">'USA'</span>;
         <br />
-        &nbsp;&nbsp;&nbsp;&nbsp;<span className={red}>this</span>.<span className={purple}>spec</span> = <span className={orange}>'Front-end</span>;
+        &nbsp;&nbsp;&nbsp;&nbsp;<span className="r">this</span>.<span className="p">spec</span> = <span className="o">'Front-end</span>;
         <br />
-        &nbsp;&nbsp;<span className={purple}>{br}</span>;
+        &nbsp;&nbsp;<span className="p">{'}'}</span>;
         <br />
-        &nbsp;&nbsp;<span className={blue}><a href="#about" className={linkClass}>about</a></span> <span className={purple}>() {bl}</span> <span className={yellow}>...</span> <span className={purple}>{br}</span>;
+        &nbsp;&nbsp;<span className="b"><a className={linkClass} onClick={setInputAbout}>about</a></span> <span className="p">() {'{'}</span> <span className="y">...</span> <span className="p">{'}'}</span>;
         <br />
-        &nbsp;&nbsp;<span className={blue}><a href="#projects" className={linkClass}>projects</a></span> <span className={purple}>() {bl}</span> <span className={yellow}>...</span> <span className={purple}>{br}</span>;
+        &nbsp;&nbsp;<span className="b"><a className={linkClass} onClick={setInputProjects}>projects</a></span> <span className="p">() {'{'}</span> <span className="y">...</span> <span className="p">{'}'}</span>;
         <br />
-        &nbsp;&nbsp;<span className={blue}><a href="#contact" className={linkClass}>contact</a></span> <span className={purple}>() {bl}</span> <span className={yellow}>...</span> <span className={purple}>{br}</span>;
+        &nbsp;&nbsp;<span className="b"><a className={linkClass} onClick={setInputContact}>contact</a></span> <span className="p">() {'{'}</span> <span className="y">...</span> <span className="p">{'}'}</span>;
         <br />
-        <span className={yellow}>{br}</span>;
+        <span className="y">{'}'}</span>;
         <br />
         <br />
-        <span className={yellow}>let</span> <span className={purple}>Tom</span> = <span className={yellow}>new</span> <span className={red}>Developer</span><span className={yellow}>()</span>;
+        <span className="y">let</span> <span className="p">Tom</span> = <span className="y">new</span> <span className="r">Developer</span><span className="y">()</span>;
         <br />
-        <span className={`${yellow} cursor`}>|</span>
+        <div className="flex justify-start w-full">
+          {input}
+        </div>
       </p>
+      <div className="[console] flex flex-col gap-2 mt-4">
+        <p className="text-right text-slate-100 text-xs">{`Console: ${pageName}.jsx`}</p>
+        <div className="text-slate-100 text-left delay">
+          {console}
+        </div>
+      </div>
     </div>
   );
 };

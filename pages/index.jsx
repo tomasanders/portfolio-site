@@ -1,8 +1,5 @@
 import Head from 'next/head';
-import { About } from '../components/About';
-import { Contact } from '../components/Contact';
-import { Intro } from '../components/Intro';
-import { Projects } from '../components/Projects';
+import { Developer } from "../components/Developer";
 
 export default function Home() {
   return (
@@ -13,14 +10,19 @@ export default function Home() {
         <meta charset="UTF-8" />
         <meta name="author" content="Tom Sanders" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"></link>
       </Head>
-      <main className="bg-light-bg p-2 relative">
-        <Intro />
-        <About />
-        <Projects />
-        <Contact />
+      <main className="bg-light-bg h-screen w-screen flex items-center justify-center p-4">
+        <div className="[console] w-full h-full bg-black flex flex-col gap-4 rounded-lg">
+          <div className="[buttons] flex items-start justify-start gap-2 p-2">
+            <div className="rounded-full bg-red-500 h-3 w-3"></div>
+            <div className="rounded-full bg-yellow-400 h-3 w-3"></div>
+            <div className="rounded-full bg-green-400 h-3 w-3"></div>
+            <p className="grow text-right text-slate-300 text-xs">tom_sanders--portfolio.jsx</p>
+          </div>
+          <div className="[screen] px-4 max-h-[90vh] overflow-scroll pb-4">
+            <Developer />
+          </div>
+        </div>
       </main>
     </>
   );

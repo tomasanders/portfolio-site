@@ -51,7 +51,7 @@ export const Developer = () => {
         <br />
         &nbsp;&nbsp;&nbsp;&nbsp;<span className="r">this</span>.<span className="p">birthPlace</span> = <span className="o">'USA'</span>;
         <br />
-        &nbsp;&nbsp;&nbsp;&nbsp;<span className="r">this</span>.<span className="p">spec</span> = <span className="o">'Front-end</span>;
+        &nbsp;&nbsp;&nbsp;&nbsp;<span className="r">this</span>.<span className="p">spec</span> = <span className="o">'Front-end'</span>;
         <br />
         &nbsp;&nbsp;<span className="p">{'}'}</span>;
         <br />
@@ -72,7 +72,7 @@ export const Developer = () => {
       </div>
       <div className="[console] flex flex-col gap-2 mt-4">
         <p className="text-right text-slate-100 text-xs">{`Console: ${pageName}`}</p>
-        <div className="text-slate-100 text-left delay">
+        <div className="text-slate-100 text-left">
           {console}
         </div>
       </div>

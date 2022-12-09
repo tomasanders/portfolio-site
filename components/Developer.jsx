@@ -15,25 +15,34 @@ export const Developer = () => {
 
   function setInputAbout() {
     setInput(<ConsoleAbout />);
-    setPageName("about");
-    setConsole(<About />);
+    setPageName("Loading File ...");
+    setTimeout(() => {
+      setPageName("about.jsx");
+      setConsole(<About />);
+    }, 1000);
   };
 
   function setInputProjects() {
     setInput(<ConsoleProjects />);
-    setPageName("projects");
-    setConsole(<Projects />);
+    setPageName("Loading File ...");
+    setTimeout(() => {
+      setPageName("projects.jsx");
+      setConsole(<Projects />);
+    }, 1000);
   };
 
   function setInputContact() {
     setInput(<ConsoleContact />);
-    setPageName("contact");
-    setConsole(<Contact />);
+    setPageName("Loading File ...");
+    setTimeout(() => {
+      setPageName("contact.jsx");
+      setConsole(<Contact />);
+    }, 1000);
   };
 
   return (
     <div className="flex flex-col gap-2">
-      <p className="text-base text-slate-100">
+      <div className="text-base text-slate-100">
         <span className="y">class</span> <span className="r">Developer</span> <span className="y">{'{'}</span>
         <br />
         &nbsp;&nbsp;<span className="y">constructor</span> <span className="p">() {'{'}</span>
@@ -60,9 +69,9 @@ export const Developer = () => {
         <div className="flex justify-start w-full">
           {input}
         </div>
-      </p>
+      </div>
       <div className="[console] flex flex-col gap-2 mt-4">
-        <p className="text-right text-slate-100 text-xs">{`Console: ${pageName}.jsx`}</p>
+        <p className="text-right text-slate-100 text-xs">{`Console: ${pageName}`}</p>
         <div className="text-slate-100 text-left delay">
           {console}
         </div>

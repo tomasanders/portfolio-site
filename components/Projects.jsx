@@ -27,7 +27,7 @@ export const Projects = () => {
   ];
 
   return (
-    <div className="text-xs">
+    <div>
       <span className="y">const</span> <span className="p">projects</span> = <span className="y">{'{'}</span>
       <br/>
       {console.log(projects)}

@@ -65,7 +65,7 @@ export const Developer = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-2 mt-4 text-xs text-console-gray">
+      <div className="flex flex-col gap-2 mt-4 text-xs text-console-gray md:text-sm">
         <p className="text-right">
           {`Console: ${pageName}`}
         </p>

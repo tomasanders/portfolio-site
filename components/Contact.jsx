@@ -30,7 +30,7 @@ export const Contact = () => {
       onSubmit={handleSubmit}
       method="POST"
       target="_blank"
-      className="text-xs leading-8 text-slate-100"
+      className="leading-8 text-slate-100"
       aria-label="Enter your contact information"
     >
       <label for="name" className="p">Enter user name</label>:

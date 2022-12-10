@@ -1,7 +1,7 @@
 export const About = () => {
   return (
     <div>
-      <p className="text-xs">
+      <p>
         Hey there!
         <br />
         <br />

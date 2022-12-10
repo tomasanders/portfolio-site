@@ -46,30 +46,32 @@ export const Developer = () => {
     <div className="flex flex-col gap-2">
       <div className="text-base text-slate-500">
         1 &#8744; <span className="y">class</span> <span className="r">Developer</span> <span className="y">{'{'}</span>
-        <br />
+        <br/>
         2 &#8744; &nbsp; <span className="y">constructor</span> <span className="p">() {'{'}</span>
-        <br />
+        <br/>
         3 &nbsp; &nbsp; &nbsp; <span className="r">this</span>.<span className="p">birthYear</span> = <span className="b">1985</span>;
-        <br />
+        <br/>
         4 &nbsp; &nbsp; &nbsp; <span className="r">this</span>.<span className="p">birthPlace</span> = <span className="o">'USA'</span>;
-        <br />
+        <br/>
         5 &nbsp; &nbsp; &nbsp; <span className="r">this</span>.<span className="p">spec</span> = <span className="o">'Front-end'</span>;
-        <br />
-        6 &nbsp; &nbsp; <span className="p">{'}'}</span>;
-        <br />
-        7 &nbsp; &nbsp; <span className="b"><a className={linkClass} onClick={setInputAbout}>about</a></span> <span className="p">() {'{'}</span> <span className="y">...</span> <span className="p">{'}'}</span>;
-        <br />
-        8 &nbsp; &nbsp; <span className="b"><a className={linkClass} onClick={setInputProjects}>projects</a></span> <span className="p">() {'{'}</span> <span className="y">...</span> <span className="p">{'}'}</span>;
-        <br />
-        9 &nbsp; &nbsp; <span className="b"><a className={linkClass} onClick={setInputContact}>contact</a></span> <span className="p">() {'{'}</span> <span className="y">...</span> <span className="p">{'}'}</span>;
-        <br />
-        10 &nbsp;<span className="y">{'}'}</span>;
-        <br />
-        11<br />
-        12 &nbsp;<span className="y">let</span> <span className="p">Tom</span> = <span className="y">new</span> <span className="r">Developer</span><span className="y">()</span>;
-        <br />
+        <br/>
+        6 &nbsp; &nbsp; &nbsp; <span className="r">this</span>.<span className="p">resume</span> = <a href="/resume" target="_blank" className={`o ${linkClass}`}>'Here'</a>;
+        <br/>
+        7 &nbsp; &nbsp; <span className="p">{'}'}</span>;
+        <br/>
+        8 &nbsp; &nbsp; <span className="b"><a className={linkClass} onClick={setInputAbout}>about</a></span> <span className="p">() {'{'}</span> <span className="y">...</span> <span className="p">{'}'}</span>;
+        <br/>
+        9 &nbsp; &nbsp; <span className="b"><a className={linkClass} onClick={setInputProjects}>projects</a></span> <span className="p">() {'{'}</span> <span className="y">...</span> <span className="p">{'}'}</span>;
+        <br/>
+        10 &nbsp; &nbsp; <span className="b"><a className={linkClass} onClick={setInputContact}>contact</a></span> <span className="p">() {'{'}</span> <span className="y">...</span> <span className="p">{'}'}</span>;
+        <br/>
+        11 &nbsp;<span className="y">{'}'}</span>;
+        <br/>
+        12<br/>
+        13 &nbsp;<span className="y">let</span> <span className="p">Tom</span> = <span className="y">new</span> <span className="r">Developer</span><span className="y">()</span>;
+        <br/>
         <div className="flex justify-start w-full">
-        13 &nbsp;{input}
+        14 &nbsp;{input}
         </div>
       </div>
       <div className="[console] flex flex-col gap-2 mt-4 text-xs">

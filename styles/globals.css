@@ -6,6 +6,10 @@
   html {
     @apply font-mono;
   }
+  #resumeHead,
+  #resumeMain {
+    font-family: "IBM Plex Mono", monospace;
+  }
 }
 
 @layer components {

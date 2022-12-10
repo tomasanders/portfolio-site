@@ -4,6 +4,7 @@ import { ConsoleLog } from "./ConsoleLog";
 import { Contact } from "./Contact";
 import { Projects } from "./Projects";
 import { Compile } from "./Compile";
+
 export const Developer = () => {
   const linkClass = "underline decoration-dotted underline-offset-4";
 

@@ -5,7 +5,7 @@ import { ConsoleContact } from "./ConsoleContact";
 import { ConsoleProjects } from "./ConsoleProjects";
 import { Contact } from "./Contact";
 import { Projects } from "./Projects";
-
+import { Compile } from "./Compile";
 export const Developer = () => {
   const linkClass = "underline decoration-dotted underline-offset-4";
 
@@ -16,6 +16,7 @@ export const Developer = () => {
   function setInputAbout() {
     setInput(<ConsoleAbout />);
     setPageName("Loading File ...");
+    setConsole(<Compile />);
     setTimeout(() => {
       setPageName("about.jsx");
       setConsole(<About />);
@@ -25,6 +26,7 @@ export const Developer = () => {
   function setInputProjects() {
     setInput(<ConsoleProjects />);
     setPageName("Loading File ...");
+    setConsole(<Compile />);
     setTimeout(() => {
       setPageName("projects.jsx");
       setConsole(<Projects />);
@@ -34,6 +36,7 @@ export const Developer = () => {
   function setInputContact() {
     setInput(<ConsoleContact />);
     setPageName("Loading File ...");
+    setConsole(<Compile />);
     setTimeout(() => {
       setPageName("contact.jsx");
       setConsole(<Contact />);
@@ -42,36 +45,36 @@ export const Developer = () => {
 
   return (
     <div className="flex flex-col gap-2">
-      <div className="text-base text-slate-100">
-        <span className="y">class</span> <span className="r">Developer</span> <span className="y">{'{'}</span>
+      <div className="text-base text-slate-500">
+        1 &#8744; <span className="y">class</span> <span className="r">Developer</span> <span className="y">{'{'}</span>
         <br />
-        &nbsp;&nbsp;<span className="y">constructor</span> <span className="p">() {'{'}</span>
+        2 &#8744; &nbsp; <span className="y">constructor</span> <span className="p">() {'{'}</span>
         <br />
-        &nbsp;&nbsp;&nbsp;&nbsp;<span className="r">this</span>.<span className="p">birthYear</span> = <span className="b">1985</span>;
+        3 &nbsp; &nbsp; &nbsp; <span className="r">this</span>.<span className="p">birthYear</span> = <span className="b">1985</span>;
         <br />
-        &nbsp;&nbsp;&nbsp;&nbsp;<span className="r">this</span>.<span className="p">birthPlace</span> = <span className="o">'USA'</span>;
+        4 &nbsp; &nbsp; &nbsp; <span className="r">this</span>.<span className="p">birthPlace</span> = <span className="o">'USA'</span>;
         <br />
-        &nbsp;&nbsp;&nbsp;&nbsp;<span className="r">this</span>.<span className="p">spec</span> = <span className="o">'Front-end'</span>;
+        5 &nbsp; &nbsp; &nbsp; <span className="r">this</span>.<span className="p">spec</span> = <span className="o">'Front-end'</span>;
         <br />
-        &nbsp;&nbsp;<span className="p">{'}'}</span>;
+        6 &nbsp; &nbsp; <span className="p">{'}'}</span>;
         <br />
-        &nbsp;&nbsp;<span className="b"><a className={linkClass} onClick={setInputAbout}>about</a></span> <span className="p">() {'{'}</span> <span className="y">...</span> <span className="p">{'}'}</span>;
+        7 &nbsp; &nbsp; <span className="b"><a className={linkClass} onClick={setInputAbout}>about</a></span> <span className="p">() {'{'}</span> <span className="y">...</span> <span className="p">{'}'}</span>;
         <br />
-        &nbsp;&nbsp;<span className="b"><a className={linkClass} onClick={setInputProjects}>projects</a></span> <span className="p">() {'{'}</span> <span className="y">...</span> <span className="p">{'}'}</span>;
+        8 &nbsp; &nbsp; <span className="b"><a className={linkClass} onClick={setInputProjects}>projects</a></span> <span className="p">() {'{'}</span> <span className="y">...</span> <span className="p">{'}'}</span>;
         <br />
-        &nbsp;&nbsp;<span className="b"><a className={linkClass} onClick={setInputContact}>contact</a></span> <span className="p">() {'{'}</span> <span className="y">...</span> <span className="p">{'}'}</span>;
+        9 &nbsp; &nbsp; <span className="b"><a className={linkClass} onClick={setInputContact}>contact</a></span> <span className="p">() {'{'}</span> <span className="y">...</span> <span className="p">{'}'}</span>;
         <br />
-        <span className="y">{'}'}</span>;
+        10 &nbsp;<span className="y">{'}'}</span>;
         <br />
-        <br />
-        <span className="y">let</span> <span className="p">Tom</span> = <span className="y">new</span> <span className="r">Developer</span><span className="y">()</span>;
+        11<br />
+        12 &nbsp;<span className="y">let</span> <span className="p">Tom</span> = <span className="y">new</span> <span className="r">Developer</span><span className="y">()</span>;
         <br />
         <div className="flex justify-start w-full">
-          {input}
+        13 &nbsp;{input}
         </div>
       </div>
-      <div className="[console] flex flex-col gap-2 mt-4">
-        <p className="text-right text-slate-100 text-xs">{`Console: ${pageName}`}</p>
+      <div className="[console] flex flex-col gap-2 mt-4 text-xs">
+        <p className="text-right text-slate-300">{`Console: ${pageName}`}</p>
         <div className="text-slate-100 text-left">
           {console}
         </div>

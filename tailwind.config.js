@@ -7,12 +7,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'light-bg': '#E5E5E5',
-        'dark-bg': '#2A2A2A',
-        'light-primary': '#6200EE',
-        'dark-primary': '#BB86FC',
-        'light-fg': '#FFFFFF',
-        'dark-fg': '#121212'
+        'app-bg': '#121212',
+        'console-bg': '#262335',
+        'dev-bg': '#171520',
       },
     },
   },

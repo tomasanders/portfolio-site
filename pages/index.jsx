@@ -11,15 +11,15 @@ export default function Home() {
         <meta name="author" content="Tom Sanders" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <main className="bg-light-bg h-screen w-screen flex items-center justify-center p-4">
-        <div className="[console] w-full h-full bg-black flex flex-col gap-4 rounded-lg">
+      <main className="bg-app-bg h-screen w-screen flex items-center justify-center p-4">
+        <div className="[console] w-full h-full bg-console-bg flex flex-col rounded-lg">
           <div className="[buttons] flex items-start justify-start gap-2 p-2">
             <div className="rounded-full bg-red-500 h-3 w-3"></div>
             <div className="rounded-full bg-yellow-400 h-3 w-3"></div>
             <div className="rounded-full bg-green-400 h-3 w-3"></div>
             <p className="grow text-right text-slate-300 text-xs">tom_sanders--portfolio.jsx</p>
           </div>
-          <div className="[screen] px-4 max-h-[90vh] overflow-scroll pb-4">
+          <div className="[screen] px-4 max-h-[90vh] overflow-scroll pb-4 bg-dev-bg pt-2 grow">
             <Developer />
           </div>
         </div>

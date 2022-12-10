@@ -18,14 +18,14 @@ export default function Resume() {
         </a>
       </div>
 
-      <header id="resumeHead" className="mb-8 mt-16 text-res-blk text-sm">
-        <h1 className="tracking-wider mb-6 text-3xl">
+      <header id="resumeHead" className="mb-8 mt-16 text-res-blk text-sm md:text-base">
+        <h1 className="mb-6 text-3xl tracking-wider md:tracking-widest md:text-5xl">
           TOM SANDERS
         </h1>
-        <h2 className="mb-2">
+        <h2 className="mb-2 md:mb-3">
           Front-End Developer
         </h2>
-        <aside className="mb-2 text-res-gray">
+        <aside className="mb-2 text-res-gray md:mb-3">
           <p>
             Tokyo, Japan
             <br/>
@@ -36,18 +36,18 @@ export default function Resume() {
         </aside>
       </header>
 
-      <main id="resumeMain" className="flex flex-col gap-6 mb-4">
-        <h2 className="text-res-blk text-sm italic">
+      <main id="resumeMain" className="flex flex-col gap-6 mb-4 md:gap-8">
+        <h2 className="text-res-blk text-sm italic md:text-base">
           Adept front-end developer focusing on React mobile-first development. Eager to continue expanding my knowledge while focusing on responsive design and accessibility.
         </h2>
 
-        <section className="flex flex-col gap-6">
-          <h2 className="text-res-lgray text-xs tracking-wider">
+        <section className="flex flex-col gap-6 md:gap-8">
+          <h2 className="text-res-lgray text-xs tracking-wider md:text-xl md:tracking-widest">
             WORK EXPERIENCE
           </h2>
 
-          <div className="mb-8 text-res-blk text-sm flex flex-col gap-3">
-            <h3 className="text-base tracking-wider">
+          <div className="mb-8 text-res-blk text-sm flex flex-col gap-3 md:text-base md:gap-6">
+            <h3 className="text-base tracking-wider md:text-lg md:tracking-widest">
               Bunpro SRS
             </h3>
             <p className="text-res-gray">
@@ -61,7 +61,7 @@ export default function Resume() {
             <p className="italic">
               Although I joined as a brand-new developer, I was assigned projects dealing with every aspect of the site. From debugging to refactoring to introducing new features, I've had a hand in several projects since I joined.
             </p>
-            <ul className="list-disc flex flex-col gap-1">
+            <ul className="list-disc flex flex-col gap-1 md:gap-3">
               <li className="ml-8">
                 Built redesigns of Learn, Onboarding, Landing, Subscription, and Payment sections.
               </li>
@@ -81,13 +81,13 @@ export default function Resume() {
           </div>
         </section>
 
-        <section className="flex flex-col gap-6">
-          <h2 className="text-res-lgray text-xs tracking-wider">
+        <section className="flex flex-col gap-6 md:gap-8">
+          <h2 className="text-res-lgray text-xs tracking-wider md:text-xl md:tracking-widest">
             PROJECTS
           </h2>
 
-          <div className="mb-8 text-res-blk text-sm flex flex-col gap-3">
-            <h3 className="text-base tracking-wider">
+          <div className="mb-8 text-res-blk text-sm flex flex-col gap-3  md:text-base md:gap-6">
+            <h3 className="text-base tracking-wider md:text-lg md:tracking-widest">
               HIKA QUIZ (PERSONAL - APP)
             </h3>
             <p className="text-res-gray">
@@ -100,8 +100,8 @@ export default function Resume() {
             </p>
           </div>
 
-          <div className="mb-8 text-res-blk text-sm flex flex-col gap-3">
-            <h3 className="text-base tracking-wider">
+          <div className="mb-8 text-res-blk text-sm flex flex-col gap-3  md:text-base md:gap-6">
+            <h3 className="text-base tracking-wider md:text-lg md:tracking-widest">
               PORTFOLIO (PERSONAL - SITE)
             </h3>
             <p className="text-res-gray">
@@ -115,13 +115,13 @@ export default function Resume() {
           </div>
         </section>
 
-        <section className="flex flex-col gap-6">
-          <h2 className="text-res-lgray text-xs tracking-wider">
+        <section className="flex flex-col gap-6 md:gap-8">
+          <h2 className="text-res-lgray text-xs tracking-wider md:text-xl md:tracking-widest">
             EDUCATION
           </h2>
 
-          <div className="text-res-gray text-sm flex flex-col gap-3">
-            <h3 className="tracking-wider text-base text-res-blk">
+          <div className="text-res-gray text-sm flex flex-col gap-3 md:text-base md:gap-6">
+            <h3 className="tracking-wider text-base text-res-blk md:text-lg md:tracking-widest">
               LE WAGON TOKYO
             </h3>
             <p>
@@ -134,8 +134,8 @@ export default function Resume() {
             </p>
           </div>
 
-          <div className="text-res-gray text-sm flex flex-col gap-3">
-            <h3 className="tracking-wider text-base text-res-blk">
+          <div className="text-res-gray text-sm flex flex-col gap-3 md:text-base md:gap-6">
+            <h3 className="tracking-wider text-base text-res-blk md:text-lg md:tracking-widest">
               UNIVERSITY OF CALIFORNIA, DAVIS
             </h3>
             <p>
@@ -146,14 +146,14 @@ export default function Resume() {
           </div>
         </section>
 
-        <section className="flex flex-col gap-6">
-          <h2 className="text-res-lgray text-xs tracking-wider">
+        <section className="flex flex-col gap-6 md:gap-8">
+          <h2 className="text-res-lgray text-xs tracking-wider md:text-xl md:tracking-widest">
             SKILLS
           </h2>
 
-          <div className="flex flex-col gap-3 text-sm text-res-blk">
+          <div className="flex flex-col gap-3 text-sm text-res-blk md:flex-row md:justify-between md:text-base">
             <div>
-              <h3 className="tracking-wider text-base text-res-blk">
+              <h3 className="tracking-wider text-base text-res-blk md:text-lg md:tracking-widest">
                 LANGUAGES
               </h3>
               <ul className="text-res-gray">
@@ -166,7 +166,7 @@ export default function Resume() {
             </div>
 
             <div>
-              <h3 className="tracking-wider text-base text-res-blk">
+              <h3 className="tracking-wider text-base text-res-blk md:text-lg md:tracking-widest">
                 LIBRARIES
               </h3>
               <ul className="text-res-gray">
@@ -180,7 +180,7 @@ export default function Resume() {
             </div>
 
             <div>
-              <h3 className="tracking-wider text-base text-res-blk">
+              <h3 className="tracking-wider text-base text-res-blk md:text-lg md:tracking-widest">
                 OTHER
               </h3>
               <ul className="text-res-gray">

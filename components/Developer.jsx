@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { About } from "./About";
-import { ConsoleAbout } from "./ConsoleAbout";
-import { ConsoleContact } from "./ConsoleContact";
-import { ConsoleProjects } from "./ConsoleProjects";
+import { ConsoleLog } from "./ConsoleLog";
 import { Contact } from "./Contact";
 import { Projects } from "./Projects";
 import { Compile } from "./Compile";
@@ -14,7 +12,7 @@ export const Developer = () => {
   const [console, setConsole] = useState();
 
   function setInputAbout() {
-    setInput(<ConsoleAbout />);
+    setInput(<ConsoleLog page="about" />);
     setPageName("Loading File ...");
     setConsole(<Compile />);
     setTimeout(() => {
@@ -24,7 +22,7 @@ export const Developer = () => {
   };
 
   function setInputProjects() {
-    setInput(<ConsoleProjects />);
+    setInput(<ConsoleLog page="projects" />);
     setPageName("Loading File ...");
     setConsole(<Compile />);
     setTimeout(() => {
@@ -34,7 +32,7 @@ export const Developer = () => {
   };
 
   function setInputContact() {
-    setInput(<ConsoleContact />);
+    setInput(<ConsoleLog page="contact" />);
     setPageName("Loading File ...");
     setConsole(<Compile />);
     setTimeout(() => {

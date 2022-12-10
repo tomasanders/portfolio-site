@@ -9,6 +9,8 @@
   #resumeHead,
   #resumeMain {
     font-family: "IBM Plex Mono", monospace;
+    @apply bg-white;
+    @apply px-6;
   }
 }
 

@@ -13,27 +13,31 @@ export default function Resume() {
       </Head>
 
       <div className="w-full fixed top-0 drop-shadow bg-white font-sans py-2">
-        <a href="/index" className="text-xs pl-2 underline">
+        <a href="/index" className="text-base pl-2 underline underline-offset-2">
           {'<-'} back
         </a>
       </div>
 
-      <header id="resumeHead" className="pt-10 px-6 mb-8 bg-white mt-4">
-        <h1 className="text-res-blk font-medium leading-none uppercase tracking-[1.3px] mb-6 text-[1.625rem]">
-          Tom Sanders
+      <header id="resumeHead" className="mb-8 mt-16 text-res-blk text-sm">
+        <h1 className="tracking-wider mb-6 text-3xl">
+          TOM SANDERS
         </h1>
-        <h2 className="text-res-blk leading-normal font-normal text-sm mb-2">
+        <h2 className="mb-2">
           Front-End Developer
         </h2>
-        <aside className="leading-normal font-normal text-sm mb-2 text-res-gray">
-          <p>Tokyo, Japan</p>
-          <p>github.com/tomasanders</p>
-          <p>thomas.a.sanders@gmail.com</p>
+        <aside className="mb-2 text-res-gray">
+          <p>
+            Tokyo, Japan
+            <br/>
+            github.com/tomasanders
+            <br/>
+            thomas.a.sanders@gmail.com
+          </p>
         </aside>
       </header>
 
-      <main id="resumeMain" className="bg-white px-6 flex flex-col gap-6 mb-4">
-        <h2 className="text-res-blk text-sm italic mb-8">
+      <main id="resumeMain" className="flex flex-col gap-6 mb-4">
+        <h2 className="text-res-blk text-sm italic">
           Adept front-end developer focusing on React mobile-first development. Eager to continue expanding my knowledge while focusing on responsive design and accessibility.
         </h2>
 

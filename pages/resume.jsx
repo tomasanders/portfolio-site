@@ -151,7 +151,7 @@ export default function Resume() {
             [SKILLS]
           </h2>
 
-          <div className="flex flex-col gap-3 text-sm text-res-blk md:flex-row md:justify-between md:text-base">
+          <div className="flex flex-col gap-3 text-sm text-res-blk md:flex-row md:justify-between md:text-base md:max-w-2xl">
             <div>
               <h3 className="text-base tracking-wider text-res-blk md:text-lg md:tracking-widest">
                 LANGUAGES

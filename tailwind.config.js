@@ -13,6 +13,7 @@ module.exports = {
         'res-blk': '#323336',
         'res-gray': '#707678',
         'res-lgray': '#C1C5C7',
+        'console-gray': '#A0ABBA',
       },
     },
   },

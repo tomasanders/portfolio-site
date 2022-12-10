@@ -13,8 +13,13 @@ export const Contact = () => {
   if (submitted) {
     return (
       <>
-        <p>Thank you for contacting me!</p>
-        <p>I'll be in touch soon.</p>
+        <p className="y">
+          <span className="b">{'>'}</span>
+          &nbsp;Thank you for contacting me!
+          <br/>
+          <span className="b">{'>'}</span>
+          &nbsp;I'll be in touch soon.
+        </p>
       </>
     );
   };
@@ -25,20 +30,21 @@ export const Contact = () => {
       onSubmit={handleSubmit}
       method="POST"
       target="_blank"
-      className="text-xs text-slate-100 leading-8"
+      className="text-xs leading-8 text-slate-100"
+      aria-label="Enter your contact information"
     >
-      <span className="p">Enter user name</span>:
+      <label for="name" className="p">Enter user name</label>:
       <br/>
-      <span className="b">{'>'}</span> <input type="text" placeholder="your name" name="name" className="bg-transparent o" required />
+      <span className="b">{'>'}</span> <input type="text" placeholder="your name" id="name" name="name" className="bg-transparent o" required />
       <br/>
-      <span className="p">Enter user email</span>:
+      <label for="email" className="p">Enter user email</label>:
       <br/>
-      <span className="b">{'>'}</span> <input type="email" placeholder="your email" name="email" className="bg-transparent o" required />
+      <span className="b">{'>'}</span> <input type="email" placeholder="your email" id="email" name="email" className="bg-transparent o" required />
       <br/>
-      <span className="p">Enter message</span>:
+      <label for="message" className="p">Enter message</label>:
       <br/>
       <div className="flex items-start">
-        <span className="b">{'>'}</span>&nbsp;<textarea placeholder="your message" name="message" className="bg-transparent o" required />
+        <span className="b">{'>'}</span>&nbsp;<textarea placeholder="your message" id="message" name="message" className="w-full bg-transparent resize-none o" required />
       </div>
       <br/>
       <button className="underline decoration-dotted underline-offset-4 y" type="submit">submit message</button>

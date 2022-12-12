@@ -19,7 +19,7 @@ export default function Home() {
             <div className="w-3 h-3 bg-green-400 rounded-full"></div>
             <h1 className="text-xs text-right grow text-slate-300">tom_sanders--portfolio.jsx</h1>
           </header>
-          <div className="px-4 max-h-[90vh] overflow-auto pb-4 bg-dev-bg pt-2 grow">
+          <div className="px-4 max-h-[90vh] pb-4 bg-dev-bg pt-2 grow">
             <Developer />
           </div>
         </div>

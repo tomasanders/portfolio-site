@@ -43,7 +43,7 @@ export const Developer = () => {
   };
 
   return (
-    <div className="flex flex-col gap-3">
+    <div className="flex flex-col w-full h-full gap-3">
       <div className="text-sm text-console-gray">
         <pre className="flex flex-col gap-1">
           <p>1 &#8744; <span className="y">class</span> <span className="r">Developer</span> <span className="y">{'{'}</span></p>
@@ -65,7 +65,7 @@ export const Developer = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-2 mt-4 text-xs text-console-gray md:text-sm">
+      <div className="flex flex-col gap-2 mt-4 overflow-auto text-xs console text-console-gray md:text-sm">
         <p className="text-right">
           {`Console: ${pageName}`}
         </p>

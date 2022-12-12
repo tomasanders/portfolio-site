@@ -27,7 +27,7 @@ export const Projects = () => {
   ];
 
   return (
-    <div>
+    <>
       <span className="y">const</span> <span className="p">projects</span> = <span className="y">{'{'}</span>
       <br/>
       {console.log(projects)}
@@ -53,6 +53,6 @@ export const Projects = () => {
         );
       })}
       &nbsp; <span className="p">disclaimer</span>: <span className="b">"more info in my resume!</span>
-    </div>
+    </>
   );
 };

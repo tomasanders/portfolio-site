@@ -11,8 +11,8 @@ export default function Home() {
         <meta name="author" content="Tom Sanders" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <main className="flex items-center justify-center w-screen h-screen p-4 bg-slate-400">
-        <div className="flex flex-col w-full h-full rounded-lg bg-console-bg md:max-w-xl">
+      <main className="flex items-center justify-center w-screen h-screen p-4 overflow-hidden bg-slate-400 md:items-start md:justify-start md:pt-16 md:pl-16 md:bg-gradient-to-t md:from-slate-400 md:to-blue-500">
+        <div className="flex flex-col w-full h-full rounded-lg bg-console-bg md:max-w-xl md:max-h-[65vh] overflow-hidden">
           <header className="flex items-start justify-start gap-2 p-2">
             <div className="w-3 h-3 bg-red-500 rounded-full"></div>
             <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>

@@ -12,13 +12,13 @@ export default function Resume() {
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet" />
       </Head>
 
-      <div className="fixed top-0 w-full py-2 font-sans bg-white drop-shadow">
+      <div className="fixed top-0 w-full max-w-5xl py-2 font-sans bg-white drop-shadow">
         <a href="/" className="pl-2 text-base underline underline-offset-2">
           {'<-'} back
         </a>
       </div>
 
-      <header id="resumeHead" className="mt-16 mb-8 text-sm text-res-blk md:text-base">
+      <header id="resumeHead" className="max-w-5xl mt-16 mb-8 text-sm text-res-blk md:text-base">
         <h1 className="mb-6 text-3xl tracking-wider md:tracking-widest md:text-5xl">
           TOM SANDERS
         </h1>
@@ -36,7 +36,7 @@ export default function Resume() {
         </aside>
       </header>
 
-      <main id="resumeMain" className="flex flex-col gap-6 mb-4 md:gap-8">
+      <main id="resumeMain" className="flex flex-col max-w-5xl gap-6 mb-4 md:gap-8">
         <h2 className="text-sm italic text-res-blk md:text-base">
           Adept front-end developer focusing on React mobile-first development. Eager to continue expanding my knowledge while focusing on responsive design and accessibility.
         </h2>

@@ -44,7 +44,7 @@ export const Developer = () => {
 
   return (
     <div className="flex flex-col gap-3">
-      <div className="text-base text-console-gray">
+      <div className="text-sm text-console-gray">
         <pre className="flex flex-col gap-1">
           <p>1 &#8744; <span className="y">class</span> <span className="r">Developer</span> <span className="y">{'{'}</span></p>
           <p>2 &#8744;   <span className="y">constructor</span> <span className="p">() {'{'}</span></p>
@@ -61,7 +61,7 @@ export const Developer = () => {
           <p>13  <span className="y">let</span> <span className="p">Tom</span> = <span className="y">new</span> <span className="r">Developer</span><span className="y">()</span>;</p>
         </pre>
         <div className="flex justify-start w-full mt-1">
-          14 &nbsp;{input}
+          14 &nbsp; {input}
         </div>
       </div>
 

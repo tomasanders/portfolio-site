@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { About } from "./About";
+import { ButtonBar } from "./ButtonBar";
+import { Compile } from "./Compile";
 import { ConsoleLog } from "./ConsoleLog";
 import { Contact } from "./Contact";
 import { Projects } from "./Projects";
-import { Compile } from "./Compile";
 
 export const Developer = () => {
   const linkClass = "underline decoration-dotted underline-offset-4";
@@ -44,6 +45,7 @@ export const Developer = () => {
 
   return (
     <div className="flex flex-col w-full h-full gap-3">
+      <ButtonBar head={true} />
       <div className="text-sm text-console-gray">
         <pre className="flex flex-col gap-1">
           <p>1 &#8744; <span className="y">class</span> <span className="r">Developer</span> <span className="y">{'{'}</span></p>
@@ -65,10 +67,8 @@ export const Developer = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-2 mt-4 overflow-auto text-xs console text-console-gray md:text-sm">
-        <p className="text-right">
-          {`Console: ${pageName}`}
-        </p>
+      <div className="[console] flex flex-col gap-2 mt-4 overflow-auto text-xs text-console-gray md:text-sm">
+        <ButtonBar head={false} pageName={pageName} />
         <div className="text-left">
           {console}
         </div>

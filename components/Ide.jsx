@@ -9,7 +9,7 @@ import { Projects } from "./Projects";
 
 
 export const Ide = () => {
-  const linkClass = "underline decoration-dotted underline-offset-4";
+  const linkClass = "underline underline-offset-4 motion-safe:animate-pulse delay-500";
 
   const [pageName, setPageName] = useState(" ");
   const [console, setConsole] = useState();

@@ -51,7 +51,7 @@ export const Ide = () => {
   };
 
   return (
-    <main className="flex flex-col w-screen h-screen bg-slate-400 d-flex overflow-hidden border border-[pink] md:flex-row md:gap-4 md:p-4">
+    <main className="flex flex-col w-screen h-screen overflow-hidden bg-slate-400 d-flex md:flex-row md:gap-4 md:p-4">
       <div className="text-sm ide text-console-gray bg-dev-bg">
         <ButtonBar head={true} />
         <div className="p-4">

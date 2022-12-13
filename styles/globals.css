@@ -32,13 +32,11 @@
     @apply text-orange-400
   }
   .ide {
-    border: 1px solid yellow;
     flex-basis: 50%;
     display: flex;
     flex-direction: column;
   }
   .console {
-    border: 1px solid green;
     flex-basis: 50%;
     min-height: 50vh;
     display: flex;

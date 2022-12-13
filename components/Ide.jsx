@@ -51,8 +51,8 @@ export const Ide = () => {
   };
 
   return (
-    <main className="grid w-screen h-screen grid-rows-2 md:grid-rows-1 md:grid-cols-2 md:gap-4 md:p-4 bg-slate-400">
-      <div className="[ide] text-console-gray bg-dev-bg text-sm md:rounded-lg md:overflow-hidden md:text-base">
+    <main className="flex flex-col w-screen h-screen bg-slate-400 d-flex overflow-hidden border border-[pink] md:flex-row md:gap-4 md:p-4">
+      <div className="text-sm ide text-console-gray bg-dev-bg">
         <ButtonBar head={true} />
         <div className="p-4">
           <pre className="flex flex-col gap-1">
@@ -73,10 +73,10 @@ export const Ide = () => {
         </div>
       </div>
 
-      <div className="[console] text-console-gray bg-dev-bg overflow-auto text-sm md:rounded-lg md:overflow:hidden md:text-base">
+      <div className="text-sm console text-console-gray bg-dev-bg">
         <ButtonBar head={false} pageName={pageName} />
 
-        <div className="p-4 text-left">
+        <div className="p-4 pb-16 text-left console-content">
           {console}
         </div>
       </div>

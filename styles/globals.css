@@ -16,20 +16,6 @@
 }
 
 @layer components {
-  @keyframes blink {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-  }
-  .cursor {
-    animation: blink 1s infinite ease-in-out;
-  }
-  .console {
-    transition: all 1s ease-in-out;
-  }
   .y {
     @apply text-yellow-200;
   }
@@ -44,5 +30,23 @@
   }
   .o {
     @apply text-orange-400
+  }
+  .ide {
+    border: 1px solid yellow;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  .console {
+    border: 1px solid green;
+    flex-basis: 50%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .console-content {
+    flex-grow: 1;
+    overflow-y: auto;
+    height: 300px;
   }
 }

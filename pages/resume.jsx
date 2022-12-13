@@ -31,6 +31,8 @@ export default function Resume() {
             <br/>
             github.com/tomasanders
             <br/>
+            tom-sanders.dev
+            <br/>
             thomas.a.sanders@gmail.com
           </p>
         </aside>
@@ -107,7 +109,7 @@ export default function Resume() {
             <p className="text-res-gray">
               Next.js, React, Tailwind CSS
               <br/>
-              github.com/tomasanders/portfolio-site
+              tom-sanders.dev
             </p>
             <p className="italic">
               This website. Just a way to display things I'm working on and host my HTML resume.

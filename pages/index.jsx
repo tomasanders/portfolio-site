@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { Developer } from "../components/Developer";
+import { Ide } from '../components/Ide';
 
 export default function Home() {
   return (
@@ -11,19 +12,7 @@ export default function Home() {
         <meta name="author" content="Tom Sanders" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <main className="flex items-center justify-center w-screen h-screen overflow-hidden bg-slate-400 md:items-start md:justify-start md:pt-16 md:pl-16 md:bg-gradient-to-t md:from-slate-400 md:to-blue-500">
-        <div className="flex flex-col w-full h-full bg-console-bg md:max-w-xl md:max-h-[65vh] overflow-hidden">
-          <header className="flex items-start justify-start gap-2 p-2">
-            <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-            <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
-            <div className="w-3 h-3 bg-green-400 rounded-full"></div>
-            <h1 className="text-xs text-right grow text-slate-300">tom_sanders--portfolio.jsx</h1>
-          </header>
-          <div className="px-4 max-h-[90vh] pb-4 bg-dev-bg pt-2 grow">
-            <Developer />
-          </div>
-        </div>
-      </main>
+      <Ide />
     </>
   );
 };

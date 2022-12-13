@@ -9,7 +9,7 @@ import { Projects } from "./Projects";
 
 
 export const Ide = () => {
-  const linkClass = "underline underline-offset-4 motion-safe:animate-pulse delay-500";
+  const linkClass = "underline underline-offset-4 motion-safe:animate-pulse delay-500 cursor-pointer";
 
   const [pageName, setPageName] = useState(" ");
   const [console, setConsole] = useState();
@@ -51,8 +51,8 @@ export const Ide = () => {
   };
 
   return (
-    <main className="grid w-screen h-screen grid-rows-2">
-      <div className="[ide] text-console-gray bg-dev-bg text-sm">
+    <main className="grid w-screen h-screen grid-rows-2 md:grid-rows-1 md:grid-cols-2 md:gap-4 md:p-4 bg-slate-400">
+      <div className="[ide] text-console-gray bg-dev-bg text-sm md:rounded-lg md:overflow-hidden md:text-base">
         <ButtonBar head={true} />
         <div className="p-4">
           <pre className="flex flex-col gap-1">
@@ -73,7 +73,7 @@ export const Ide = () => {
         </div>
       </div>
 
-      <div className="[console] text-console-gray bg-dev-bg overflow-auto text-sm">
+      <div className="[console] text-console-gray bg-dev-bg overflow-auto text-sm md:rounded-lg md:overflow:hidden md:text-base">
         <ButtonBar head={false} pageName={pageName} />
 
         <div className="p-4 text-left">

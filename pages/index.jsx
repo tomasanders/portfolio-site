@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import { Developer } from "../components/Developer";
 import { Ide } from '../components/Ide';
 
 export default function Home() {

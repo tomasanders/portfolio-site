@@ -23,7 +23,7 @@ export const Ide = () => {
         setPageName("about.jsx");
         setConsole(<About />);
       }, 2000);
-    }, 3000);
+    }, 2000);
   };
 
   function setInputProjects() {
@@ -35,7 +35,7 @@ export const Ide = () => {
         setPageName("projects.jsx");
         setConsole(<Projects />);
       }, 2000);
-    }, 3000);
+    }, 2000);
   };
 
   function setInputContact() {
@@ -47,7 +47,7 @@ export const Ide = () => {
         setPageName("contact.jsx");
         setConsole(<Contact />);
       }, 2000);
-    }, 3000);
+    }, 2000);
   };
 
   return (
@@ -68,7 +68,7 @@ export const Ide = () => {
             <p>10    <span className="b"><a className={linkClass} onClick={setInputContact}>contact</a></span> <span className="p">() {'{'}</span> <span className="y">...</span> <span className="p">{'}'}</span>;</p>
             <p>11  <span className="y">{'}'}</span>;</p>
             <p>12</p>
-            <p>13  <span className="y">let</span> <span className="p">Tom</span> = <span className="y">new</span> <span className="r">Developer</span><span className="y">()</span>;</p>
+            <p>13  <span className="y">const</span> <span className="p">Tom</span> = <span className="y">new</span> <span className="r">Developer</span><span className="y">()</span>;</p>
           </pre>
         </div>
       </div>

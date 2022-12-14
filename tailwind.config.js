@@ -15,9 +15,6 @@ module.exports = {
         'res-lgray': '#C1C5C7',
         'console-gray': '#A0ABBA',
       },
-      backgroundImage: {
-        'dino': "url('/dino.svg')",
-      },
     },
   },
   plugins: [],

@@ -1,3 +1,4 @@
+import { NEXT_CLIENT_SSR_ENTRY_SUFFIX } from "next/dist/shared/lib/constants";
 import { useState } from "react";
 import { About } from "./About";
 import { ButtonBar } from "./ButtonBar";
@@ -10,6 +11,8 @@ import { Projects } from "./Projects";
 
 export const Ide = () => {
   const linkClass = "underline underline-offset-4 motion-safe:animate-pulse delay-500 cursor-pointer";
+  const vo = <i class="fa-solid fa-chevron-down"></i>;
+  const vc = <i class="fa-solid fa-chevron-right"></i>;
 
   const [pageName, setPageName] = useState(" ");
   const [console, setConsole] = useState();
@@ -56,19 +59,19 @@ export const Ide = () => {
         <ButtonBar head={true} />
         <div className="p-4">
           <pre className="flex flex-col gap-1">
-            <p>1 &#8744; <span className="y">class</span> <span className="r">Developer</span> <span className="y">{'{'}</span></p>
-            <p>2 &#8744;   <span className="y">constructor</span> <span className="p">() {'{'}</span></p>
-            <p>3       <span className="pl-13 r">this</span>.<span className="p">birthYear</span> = <span className="b">1985</span>;</p>
-            <p>4       <span className="r">this</span>.<span className="p">birthPlace</span> = <span className="o">'USA'</span>;</p>
-            <p>5       <span className="r">this</span>.<span className="p">spec</span> = <span className="o">'Front-end'</span>;</p>
-            <p>6       <span className="r">this</span>.<span className="p">resume</span> = <a href="/resume" target="_blank" className={`o ${linkClass}`}>'Here'</a>;</p>
-            <p>7     <span className="p">{'}'}</span>;</p>
-            <p>8     <span className="b"><a className={linkClass} onClick={setInputAbout}>about</a></span> <span className="p">() {'{'}</span> <span className="y">...</span> <span className="p">{'}'}</span>;</p>
-            <p>9     <span className="b"><a className={linkClass} onClick={setInputProjects}>projects</a></span> <span className="p">() {'{'}</span> <span className="y">...</span> <span className="p">{'}'}</span>;</p>
-            <p>10    <span className="b"><a className={linkClass} onClick={setInputContact}>contact</a></span> <span className="p">() {'{'}</span> <span className="y">...</span> <span className="p">{'}'}</span>;</p>
-            <p>11  <span className="y">{'}'}</span>;</p>
+            <p>1  {vo}  <span className="y">class</span> <span className="r">Developer</span> <span className="y">{'{'}</span></p>
+            <p>2  {vo}    <span className="y">constructor</span> <span className="p">() {'{'}</span></p>
+            <p>3          <span className="pl-13 r">this</span>.<span className="p">birthYear</span> = <span className="b">1985</span>;</p>
+            <p>4          <span className="r">this</span>.<span className="p">birthPlace</span> = <span className="o">'USA'</span>;</p>
+            <p>5          <span className="r">this</span>.<span className="p">spec</span> = <span className="o">'Front-end'</span>;</p>
+            <p>6          <span className="r">this</span>.<span className="p">resume</span> = <a href="/resume" target="_blank" className={`o ${linkClass}`}>'Here'</a>;</p>
+            <p>7        <span className="p">{'}'}</span>;</p>
+            <p>8  {vc}     <span className="b"><a className={linkClass} onClick={setInputAbout}>about</a></span> <span className="p">() {'{'}</span> <span className="y">...</span> <span className="p">{'}'}</span>;</p>
+            <p>9  {vc}     <span className="b"><a className={linkClass} onClick={setInputProjects}>projects</a></span> <span className="p">() {'{'}</span> <span className="y">...</span> <span className="p">{'}'}</span>;</p>
+            <p>10 {vc}     <span className="b"><a className={linkClass} onClick={setInputContact}>contact</a></span> <span className="p">() {'{'}</span> <span className="y">...</span> <span className="p">{'}'}</span>;</p>
+            <p>11     <span className="y">{'}'}</span>;</p>
             <p>12</p>
-            <p>13  <span className="y">const</span> <span className="p">Tom</span> = <span className="y">new</span> <span className="r">Developer</span><span className="y">()</span>;</p>
+            <p>13    <span className="y">const</span> <span className="p">Tom</span> = <span className="y">new</span> <span className="r">Developer</span><span className="y">()</span>;</p>
           </pre>
         </div>
       </div>

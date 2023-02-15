@@ -53,7 +53,7 @@ export default function Resume() {
               Bunpro SRS
             </h3>
             <p className="text-res-gray">
-              Full-Stack Developer
+              Front-End Developer
               <br/>
               August 2021 - Current
             </p>
@@ -61,23 +61,26 @@ export default function Resume() {
               Bunpro SRS is a website that aims to simplify the difficult process of learning Japanese through a wealth of resources and a powerful spaced repetition review system.
             </p>
             <p className="italic">
-              Although I joined as a brand-new developer, I was assigned projects dealing with every aspect of the site. From debugging to refactoring to introducing new features, I've had a hand in several projects since I joined.
+              Although I joined as a new developer, I was assigned projects dealing with every aspect of the site. From debugging to refactoring to introducing new features, I've had a hand in several projects since I joined.
             </p>
             <ul className="flex flex-col gap-1 list-disc md:gap-3">
               <li className="ml-8">
-                Built redesigns of Learn, Onboarding, Landing, Subscription, and Payment sections.
+                Worked with UX designer to build redesigns of Learn, Onboarding, Landing, Subscription, and Payment sections using Figma, jQuery, Ruby on Rails, SCSS, and Bootstrap.
               </li>
               <li className="ml-8">
-                Designed and implemented color blind mode and other accessibility features.
+                Designed and implemented color blind mode and other accessibility features sitewide. Used WCAG guidelines to move our Chrome Lighthouse Accessibility score up by ~20%.
               </li>
               <li className="ml-8">
-                Refactored code sitewide and redesigned CSS guidelines.
+                Conducted sitewide code refactors, focusing on CSS and HTML. Removed and rewrote redundant and unused CSS to remove ~5000 lines of code. Also updated CSS guidelines, using the GPS methodology.
               </li>
               <li className="ml-8">
-                Implemented i18n localization sitewide in English, Spanish, and Japanese.
+                Implemented localization sitewide in English, Spanish, and Japanese using Ruby i18n gem and next-translate.
               </li>
               <li className="ml-8">
-                Helped to transition the front-end from Rails to Next.js, along with rebuilding of features in React and TypeScript.
+                Helped to transition the front-end from Rails to Next.js, along with rebuilding features in React, TypeScript, and Tailwind CSS.
+              </li>
+              <li className="ml-8">
+                Regularly conducted bugfixes by working with users in our Community Forum to address issues.
               </li>
             </ul>
           </div>
@@ -129,7 +132,7 @@ export default function Resume() {
             <p>
               Full-Stack Web Developer, Computer Programming
               <br/>
-              April 2021 - June 2021
+              2021
             </p>
             <p className="italic text-res-blk">
               9-week full-time intensive coding bootcamp learning HTML, CSS, Bootstrap, JavaScript ES6, SQL, git, GitHub, Heroku, and Ruby on Rails.
@@ -143,7 +146,7 @@ export default function Resume() {
             <p>
               Bachelor of Arts <abbr>(B.A),</abbr> Communication
               <br/>
-              June 2010 - June 2013
+              2010 - 2013
             </p>
           </div>
         </section>
@@ -189,6 +192,9 @@ export default function Resume() {
                 <li>Git</li>
                 <li>GitHub</li>
                 <li>Visual Studio Code</li>
+                <li>Web Accessibility (WCAG Guidelines)</li>
+                <li>Internationalization (i18n, next-translate)</li>
+                <li>Vitest, React Testing Library</li>
               </ul>
             </div>
 
